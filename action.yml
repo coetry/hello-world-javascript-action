@@ -10,4 +10,4 @@ outputs:
   description: 'The time homie was greeted'
 runs:
   using: 'node12'
-  main: 'index.js'
+  main: 'dist/index.js'
