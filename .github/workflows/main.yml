@@ -1,0 +1,16 @@
+on: [push]
+
+jobs:
+  yo_homie_job:
+    runs-on: ubuntu-latest
+    name: A job to say yo
+    steps:
+    - name: Yo homie action step
+      id: yo
+      uses: ./ 
+      with:
+        homie-to-greet: 'coetry'
+    - name: Get output time
+      run: echo "The time was ${{ steps.yo.outputs.time }}"
+      
+        
