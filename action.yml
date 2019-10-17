@@ -9,5 +9,5 @@ outputs:
   time: #id of output
   description: 'The time homie was greeted'
 runs:
-  using: 'node10'
+  using: 'node12'
   main: 'dist/index.js'
