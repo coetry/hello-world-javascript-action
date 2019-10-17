@@ -5,6 +5,8 @@ jobs:
     runs-on: ubuntu-latest
     name: A job to say yo
     steps:
+    - name: Checkout
+      uses: actions/checkout@v1
     - name: Yo homie action step
       id: yo
       uses: ./ 
