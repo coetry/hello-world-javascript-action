@@ -1,0 +1,13 @@
+name: 'Yo Homie'
+description: 'Greet a homie and record the time'
+inputs:
+  homie-to-greet: # id of input
+    description: 'Homie to greet'
+    required: true
+    default: 'bob'
+outputs:
+  time: #id of output
+  description: 'The time homie was greeted'
+runs:
+  using: 'node10'
+  main: 'index.js'
